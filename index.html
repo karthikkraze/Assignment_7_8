@@ -1,37 +1,67 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Assignment_7_8</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
+        id="bootstrap-css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='Css/styles.css'>
+    <script src='Js/index.js'></script>
 </head>
+
 <body>
-    <form id="registration-form" onsubmit="validateForm()" >
-        <label>First Name:</label>
-        <input type="text" id="firstName" required>
+    <div class="container">
+        <div class="row m-4 pt-3">
+            <div class="col">
+                <div class="login-card p-3">
+                    <div class="card-body pt-3">
+                        <h2>Registration Form</h2>
+                        <form id="registration-form" onsubmit="validateForm()">
+                            <div id="fname">
+                                <label>First Name:</label>
+                                <input type="text" id="firstName" required><br>
+                            </div>
 
-        <label>Last Name:</label>
-        <input type="text" id="lastName" required>
+                            <div id="lname">
+                                <label>Last Name:</label>
+                                <input type="text" id="lastName" required><br>
+                            </div>
 
-        <label>Date of Birth:</label>
-        <input type="date" id="dob" required>
+                            <div id="Dob">
+                                <label>Date of Birth:</label>
+                                <input type="date" id="dob" required><br>
+                            </div>
 
-        <label>Gender:</label>
-        <input type="radio" id="male" name="gender" value="male" required>
-        <label id="male">Male</label>
-        <input type="radio" id="female" name="gender" value="female" required>
-        <label for="female">Female</label>
+                            <div id="MrF">
+                                <label>Gender:</label>
+                                <input type="radio" id="malecb" name="gender" value="male" required>
+                                <label id="male">Male</label>
+                                <input type="radio" id="femalecb" name="gender" value="female" required>
+                                <label for="female">Female</label><br>
+                            </div>
 
-        <label>Password:</label>
-        <input type="password" id="password" required>
+                            <div id="pwd">
+                                <label>Password:</label>
+                                <input type="password" id="password" required><br>
+                            </div>
 
-        <label>Confirm Password:</label>
-        <input type="password" id="confirmPassword" required>
-
-        <input type="submit" value="Register">
-    </form>
+                            <div id="conpwd">
+                                <label>Confirm Password:</label>
+                                <input type="password" id="confirmPassword" required><br>
+                            </div>
+                            <input type="submit" value="Register">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

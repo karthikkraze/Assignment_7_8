@@ -8,6 +8,20 @@ label {
     margin-bottom: 5px;
 }
 
+
+.login-card{
+    margin:auto;
+    width:50%;
+    border-radius: 10px;
+    box-shadow: 1px 10px 10px 5px rgb(141, 144, 144);
+    text-align: center;
+    margin-top: 10%
+}
+
+.card-body h2{
+    margin-bottom: 1.5rem;
+}
+
 input, select {
     margin-bottom: 10px;
 }
@@ -21,3 +35,31 @@ input, select {
     color: green;
     display: none;
 }
+
+#fname, #lname, #Dob, #pwd, #conpwd {
+    display: flex;
+}
+
+#firstName, #lastName, #password{
+    margin-left: 30%;
+    width: 50%;
+}
+
+#dob{
+    margin-left: 27%;
+    width: 50%;
+}
+
+#MrF{
+    display: flex;
+}
+
+#malecb{
+    margin-left: 35%;
+}
+
+#confirmPassword{
+    margin-left: 18%;
+    width: 50%;
+}
+
